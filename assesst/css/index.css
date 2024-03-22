@@ -500,7 +500,7 @@ img[alt="logoUs"] {
     align-items: center;
     justify-content: space-around;
     gap: 0;
-}
+  }
   .btn-about-us {
     order: 1;
   }
@@ -509,10 +509,10 @@ img[alt="logoUs"] {
     width: 100%;
   }
 
-  .btn-about-us{
+  .btn-about-us {
     justify-content: space-evenly;
   }
-  .btn-services{
+  .btn-services {
     padding: 0px !important;
   }
 }
@@ -566,13 +566,19 @@ img[alt="logoUs"] {
   }
   .btn-services {
     color: white;
-    width: 94px;
-    height: 94px;
+    width: 90px !important;
+    height: 90px;
     background-color: #0d0c11;
     border: 1px solid #44424b;
     border-radius: 30% !important;
   }
-  .btn-services p:nth-child(1){
+  .btn-services:hover {
+    width: 90px !important;
+    height: 90px;
+    background-color: #f1844a;
+    color: white !important;
+  }
+  .btn-services p:nth-child(1) {
     font-size: 35px !important;
   }
 }
