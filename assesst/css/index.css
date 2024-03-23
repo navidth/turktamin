@@ -368,6 +368,7 @@ img[alt="logoUs"] {
   font-size: 14px !important;
   font-weight: 600 !important;
   color: #44424B !important;
+  text-align: center;
 }
 .accordion-button::after{
   margin-left: 0 !important;
