@@ -169,7 +169,7 @@ a {
 .profile {
   background-image: linear-gradient(to left, #f09666, #de7c47);
   mix-blend-mode: normal;
-  height: 50px;
+  height: 65px;
   overflow: hidden;
   border-radius: 1rem;
   color: white;
@@ -363,6 +363,10 @@ img[alt="logoUs"] {
 }
 
 /*...................................media.......................................  */
+/* media 950px ................................................................... */
+@media screen and (max-width:951px) {
+  
+}
 /* media 767 px......................................................................  */
 
 @media screen and (max-width: 767.5px) {
