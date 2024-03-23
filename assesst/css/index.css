@@ -361,7 +361,35 @@ img[alt="logoUs"] {
   transition: opacity 0.5s ease;
   opacity: 0.75;
 }
-
+.accordion-item{
+  border: none !important;
+}
+.accordion-button{
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #44424B !important;
+}
+.accordion-button::after{
+  margin-left: 0 !important;
+}
+.accordion-body{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  background-color: #00A9B8;
+  color:white;
+}
+.accordion-button:not(.collapsed){
+  color: white !important;
+  background-color: #00a9b8 !important;
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed) #question-mark-draw-svgrepo-com path {
+  fill: white;
+}
+.accordion-button:not(.collapsed)::after{
+  mix-blend-mode: color-dodge;
+}
 /*...................................media.......................................  */
 /* media 950px ................................................................... */
 @media screen and (max-width:951px) {
