@@ -361,26 +361,26 @@ img[alt="logoUs"] {
   transition: opacity 0.5s ease;
   opacity: 0.75;
 }
-.accordion-item{
+.accordion-item {
   border: none !important;
 }
-.accordion-button{
+.accordion-button {
   font-size: 14px !important;
   font-weight: 600 !important;
-  color: #44424B !important;
+  color: #44424b !important;
   text-align: center;
 }
-.accordion-button::after{
+.accordion-button::after {
   margin-left: 0 !important;
 }
-.accordion-body{
+.accordion-body {
   font-size: 14px;
   font-weight: 400;
   line-height: 28px;
-  background-color: #00A9B8;
-  color:white;
+  background-color: #00a9b8;
+  color: white;
 }
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
   color: white !important;
   background-color: #00a9b8 !important;
   box-shadow: none;
@@ -388,13 +388,101 @@ img[alt="logoUs"] {
 .accordion-button:not(.collapsed) #question-mark-draw-svgrepo-com path {
   fill: white;
 }
-.accordion-button:not(.collapsed)::after{
+.accordion-button:not(.collapsed)::after {
   mix-blend-mode: color-dodge;
+}
+.blog {
+  display: flex;
+  gap: 25px;
+  width: 1245px;
+}
+.new-blogs-parag h1, .all-blogs-btn{
+  font-size:24px;
+}
+.slides {
+  width: 392px;
+  min-width: 390px;
+  border: 1px solid #E5E5E5;
+  border-radius: 2rem;
+  transition: transform 0.5s ease;
+}
+.image-slide img{
+  display: block;
+  margin: 8px auto;
+  border-radius: 2rem;
+  width: 355px;
+  min-width:340px
+}
+.header-slide, .line , .par-slide{
+  padding: 0px 16px;
+}
+.detaile-slide{
+  padding: 12px 16px;
+}
+.comment-slide, .time-slide{
+  font-size: 12px;
+}
+.prev-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.prev button,
+.next button {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0px 8px 4px 8px !important;
+  color: #44424b;
+  font-family: "cursive", sans-serif;
+}
+.prev button:hover,
+.next button:hover {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  background-color: #ff8a4a;
+}
+.dot {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot:hover {
+  background-color: #717171;
+}
+.active {
+  animation-name: anime;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes anime {
+  0% {
+    background-color: #bbb;
+  }
+  50% {
+    background-color: #5f5e5e;
+  }
+  100% {
+    background-color: #bbb;
+  }
+}
+.par-slide p {
+  font-size: 12px;
+}
+.header-slide h1{
+  font-size: 14px;
+  font-weight: bold;
+}
+.hoverable:hover path {
+  fill: #de7c47 !important;
 }
 /*...................................media.......................................  */
 /* media 950px ................................................................... */
 @media screen and (max-width:951px) {
-  
 }
 /* media 767 px......................................................................  */
 
@@ -614,12 +702,34 @@ img[alt="logoUs"] {
   .btn-services p:nth-child(1) {
     font-size: 35px !important;
   }
+  .new-blogs-parag h1, .all-blogs-btn{
+    font-size:1rem;
+    font-weight: bold;
+  }
 }
 
-/* phone md.................................................................
+/* /* phone md................................................................. */
 @media screen and (max-width:440px) {
-
-} */
+  .blog {
+    display: flex;
+    gap: 25px;
+    width: 1245px;
+  }
+  .new-blogs-parag h1, .all-blogs-btn{
+    font-size:16px;
+  }
+  .slides {
+    width: 392px;
+    min-width: 360px;
+    border: 1px solid #E5E5E5;
+    border-radius: 2rem;
+    transition: transform 0.5s ease;
+  }
+  .image-slide img{
+    width: 340px;
+    min-width:330px;
+  }
+} 
 
 /*  phone sm ......................................................................... */
 @media screen and (max-width: 375.5px) {
@@ -646,5 +756,21 @@ img[alt="logoUs"] {
   }
   .ulItemsTorkamin::before {
     display: none;
+  }
+  .slides {
+    width: 392px;
+    min-width: 300px;
+    border: 1px solid #E5E5E5;
+    border-radius: 2rem;
+    transition: transform 0.5s ease;
+  }
+  .image-slide img{
+    width: 280px;
+    min-width:280px;
+  }
+  .detaile-slide div{
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start !important;
   }
 }

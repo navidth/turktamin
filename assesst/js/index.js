@@ -55,13 +55,49 @@ const handlerMenuTurkey = () => {
 };
 
 const itemMenu = document.querySelectorAll(".itemMenu");
-itemMenu.forEach((i) =>{  
+itemMenu.forEach((i) => {
   i.addEventListener("click", () => {
     itemMenu.forEach((item) => {
       item.classList.remove("activeMenuItem");
     });
     i.classList.add("activeMenuItem");
-  })
+  });
+});
 
+let slides = document.getElementsByClassName("slides");
+let blog = document.getElementById("blog");
+const prev = document.getElementById("prev");
+const next = document.getElementById("next");
+
+let currentIndex = 0;
+let maxIndex = slides.length - 1;
+const slideWidth = slides[0].offsetWidth +25;
+
+next.addEventListener("click", () => {
+  if (currentIndex < maxIndex) {
+    currentIndex++;
+    updateSlider();
+  }
+});
+prev.addEventListener("click", () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateSlider();
+  }
+});
+function updateSlider() {
+  const offset = currentIndex * slideWidth
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.transform = `translateX(${offset}px)`;
+  }
+  if (currentIndex == 0) {
+    prev.style.display = "none";
+  } else {
+    prev.style.display = "block";
+  }
+  if (currentIndex === maxIndex) {
+    next.style.display = "none";
+  } else {
+    next.style.display = "block";
+  }
 }
-);
