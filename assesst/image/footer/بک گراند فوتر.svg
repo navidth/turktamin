@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1366" height="586.387" viewBox="0 0 1366 586.387">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.471" y2="1.017" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00a9b8"/>
+      <stop offset="1" stop-color="#049ba8"/>
+    </linearGradient>
+  </defs>
+  <g id="بک_گراند_فوتر" data-name="بک گراند فوتر" transform="translate(0 -5174.613)">
+    <path id="BG0" d="M0,0S282.017-9.762,452.767,0,566.988,39.048,683,39.048,746.067,9.762,916.817,0,1366,0,1366,0V575.048H0Z" transform="translate(0 5178.952)" fill="#00a9b8" opacity="0.1"/>
+    <path id="BG0-2" data-name="BG0" d="M0,0S282.017-9.762,452.767,0,566.988,39.048,683,39.048,746.067,9.762,916.817,0,1366,0,1366,0V575.048H0Z" transform="translate(0 5185.952)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
