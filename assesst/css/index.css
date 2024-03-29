@@ -543,6 +543,8 @@ img[alt="logoUs"] {
   background-color: #0d0c11;
   display: flex;
   padding: 26px 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 12px 0px -1px;
+  border: 2px dashed rgba(255, 255, 255, 0.2);
 }
 #Vector_174_Stroke_ {
   animation: icons-start 2s 0s infinite ease-in;
