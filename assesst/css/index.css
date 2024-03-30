@@ -500,12 +500,13 @@ img[alt="logoUs"] {
   background-size: cover;
   position: relative;
   mix-blend-mode: normal;
+  background-position: top;
 }
 .btn-up {
   width: 47px;
   height: 47px;
   position: absolute;
-  top: -7px;
+  top: 2px;
   left: 60px;
   border: 2.5px solid white !important;
   background-color: #ff8a4a !important;
@@ -517,6 +518,13 @@ img[alt="logoUs"] {
 }
 .about-company {
   flex: 1;
+}
+.header-footerr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
 }
 .header-2 p {
   font-size: 18px;
@@ -575,9 +583,42 @@ img[alt="logoUs"] {
   background-color: #1b1920;
   margin: 16px 20px;
 }
+.quick-access ul li a:hover {
+  color: #ff8a4a;
+}
 /*...................................media.......................................  */
 /* media 950px ................................................................... */
-@media screen and (max-width: 951px) {
+@media screen and (max-width: 870px) {
+  .footer {
+    background-position: center;
+  }
+  .links-footer {
+    background-color: #0d0c11;
+    display: flex;
+    flex-direction: column;
+    padding: 26px 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 12px 0px -1px;
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+  }
+  .quick-access,
+  .myConnections {
+    margin: 16px !important;
+    width: 100%;
+    border-bottom: 1px solid #44424b5a;
+  }
+  .quick-access div:nth-child(2) svg,
+  .myConnections div:nth-child(2) svg {
+    margin-left: 40px !important;
+  }
+  .quick-access div:nth-child(2) {
+    justify-content: space-between;
+  }
+  .myConnections div:nth-child(2) {
+    justify-content: space-between;
+  }
+  .myLicense {
+    margin: 16px 0;
+  }
 }
 /* media 767 px......................................................................  */
 
@@ -731,11 +772,40 @@ img[alt="logoUs"] {
   .btn-services {
     padding: 0px !important;
   }
+  .quick-access,
+  .myConnections {
+    margin: 16px 0;
+    width: 100%;
+    border-bottom: 1px solid #44424b5a;
+  }
+  .quick-access div:nth-child(2) {
+    justify-content: space-between;
+  }
+  .myConnections div:nth-child(2) {
+    justify-content: space-between;
+  }
+  .myLicense {
+    margin: 16px 0;
+  }
 }
 
 /* phone lg................................................................... */
 
 @media screen and (max-width: 500px) {
+  .btn-up {
+    top: 57px;
+    left: 20px;
+  }
+  .header-footerr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .header-2 {
+    order: 2;
+    margin-top: 8px;
+  }
   .menu {
     height: auto;
     padding: 0px 0px 0px 30px;
@@ -801,6 +871,9 @@ img[alt="logoUs"] {
   .all-blogs-btn {
     font-size: 1rem;
     font-weight: bold;
+  }
+  .logo-up-footer img {
+    margin-top: 17px;
   }
 }
 
