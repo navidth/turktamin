@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Byekan";
+  src: url(../fonts/font/Yekan\ Bakh\ Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: white;
+  font-family: Byekan;
 }
 a {
   text-decoration: none;
